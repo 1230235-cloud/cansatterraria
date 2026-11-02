@@ -1,0 +1,17 @@
+# CanSat Ground Station - dependencias
+#
+# Instalación:
+#   pip install -r requirements.txt
+#
+# Nota sobre PyQt5 + PyOpenGL: en Linux sin soporte OpenGL por defecto,
+# instalar libgl1 y libglu1-mesa (Debian/Ubuntu):
+#   sudo apt install libgl1 libglu1-mesa x11-utils
+#
+# Si pyqtgraph.opengl no está disponible, la aplicación cae automáticamente
+# a un indicador de actitud 2D (horizonte artificial) y sigue funcionando.
+
+PyQt5>=5.15
+pyqtgraph>=0.13
+PyOpenGL>=3.1
+numpy>=1.21
+pyserial>=3.5
